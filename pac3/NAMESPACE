@@ -1,0 +1,6 @@
+useDynLib(pac3, .registration=TRUE)
+importFrom("grDevices", "rgb")
+importFrom("graphics", "abline", "hist", "par")
+importFrom("stats", "complete.cases", "rbinom", "reorder", "rnorm")
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")

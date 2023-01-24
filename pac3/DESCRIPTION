@@ -1,0 +1,13 @@
+Package: pac3
+Type: Package
+Title: PhyloAcc-C
+Version: 0.1
+Date: 2023-01-02
+Author: Patrick Gemmell
+Maintainer: Patrick Gemmell <pgemmell@fas.harvard.edu>
+Description: Relate rates of molecular and phenotypic evolution. Input is a multiple sequence alignment of a conserved non-coding element, continuous trait data observed in extant species, and a background phylogeny and substitution process. MCMC is used to assign rate categories (background, conserved, accelerated) to branches and explore whether the categories are associated with faster or slower evolution of the trait.
+License: GPL-3
+Suggests: ape, sm
+Imports: Rcpp (>= 1.0.9), expm
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://phyloacc.github.io
