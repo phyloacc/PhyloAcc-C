@@ -10,4 +10,6 @@ For further information on the PhyloAcc-C model, see the [model description](mod
 
 N.B. PhyloAcc-C has been implemented using a mixture of R and C++. The upside of using C++ is good performance. The downside is that to use PhyloAcc-C you will need a development environment installed on your computer. In future we will provide binary packages.
 
+Once you install the PhyloAcc-C package in R, help is available in the usual way, e.g. ?pac3 brings up a jump page to documentation on each function.
+
 More information on the PhyloAcc family of methods is available at the [PhyloAcc organization](https://phyloacc.github.io).
