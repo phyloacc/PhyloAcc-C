@@ -6,7 +6,7 @@ Input to PhyloAcc-C is a multiple sequence alignment of a CNE, continuous trait 
 
 For examples of how to use the PhyloAcc-C R package, see the [tutorial](tutorial/tutorial.pdf).
 
-For further information on the PhyloAcc-C model, see the [model description](model_description.pdf).
+For further information on the PhyloAcc-C model, see the [preprint](https://doi.org/10.1101/2023.10.04.560937).
 
 Once you install the PhyloAcc-C package in R, help is available in the usual way, e.g. `?pac3` brings up a jump page to documentation on each function.
 
