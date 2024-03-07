@@ -1,3 +1,14 @@
+order_check_quiet = function(tree) {
+  # The following is a precondition for the C++ code.
+  E = nrow(tree$edge)
+  stopifnot("expect even number of edges"=E %% 2 == 0)
+  for (e in seq(E, 1, -2)) {
+    i1 = tree$edge[e  , 1]
+    i2 = tree$edge[e-1, 1]
+    stopifnot("expect edges to come in pairs"=i1==i2)
+  }
+}
+
 run_model = function(tree, alignment, trait_tbl=NULL, transition_matrix, stationary_distro,
                     n_iter=10, inner_iter=500,
                     prior_zr_1=0.5,
@@ -14,6 +25,7 @@ run_model = function(tree, alignment, trait_tbl=NULL, transition_matrix, station
   if (!do_Y) { warning("no trait supplied") }
   stopifnot(0 <= prior_zr_1 && prior_zr_1 <= 1)
   tree = reorder(tree, "postorder")
+  order_check_quiet(tree) # Want to fail immediately in event reorder does not return paired edges in future.
   ape_names = with(tree, c(tip.label, node.label))
   ape_nodes = sort(unique(c(tree$edge)))
   N = length(ape_names)
