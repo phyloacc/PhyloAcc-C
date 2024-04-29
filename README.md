@@ -12,7 +12,7 @@ Once you install the PhyloAcc-C package in R, help is available in the usual way
 
 ## Installation instructions
 
-PhyloAcc-C has been implemented using a mixture of R and C++. This is necessary to get good performance but has the downside that you will need a development environment installed on your computer. (For the time being, at least. In future we will provide binary packages.)
+PhyloAcc-C has been implemented using a mixture of R and C++. This is necessary to get good performance but has the downside that you will need a development environment installed on your computer. (For the time being, at least. In future we may provide binary packages.)
 
 First make sure you are set up for using R and C++.
 
